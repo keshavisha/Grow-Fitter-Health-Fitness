@@ -1,0 +1,240 @@
+
+.diet-planner-root{
+  display: flex;
+    height: max-content;
+    width:100vw;
+    flex-direction: row;
+    background: rgb(215,64,64);
+background: linear-gradient(90deg, rgba(215,64,64,1) 0%, rgba(121,9,94,0.6896008403361344) 100%, rgba(0,212,255,1) 100%);
+    color:#FFFFE0;
+   
+}
+.diet-planner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 10%);/* adjust as needed */
+  margin-top: 10%;
+}
+.heading{
+    color:#FFFFE0;
+}
+
+  
+  .form-section, .meal-plan-section {
+    display: flex;
+    height: fit-content;
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    margin-top:10%;
+  }
+  
+  
+  .form-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-section input {
+    display: block;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    width: 80%;
+  }
+  .diet-button {
+    background-color: #fff;
+    border: 2px solid #6C63FF;
+    color: #6C63FF;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .diet-button:hover {
+    background-color: #6C63FF;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  
+  button.diet.active {
+  background-color: #FFCA3A;
+  color: #ffffff;
+  border-color: #FFCA3A;
+}
+
+  
+  .form-section .age-height {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form-section .age-height input {
+    width: calc(50% - 0.5rem);
+  }
+  
+  .form-section .weight input {
+    width: 100%;
+  }
+  
+  .activity-level-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  .activity-level-buttons button {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    min-width: 150px;
+  }
+  
+  .activity-level-buttons button.active {
+    border-color: #BFDB38;
+    background-color: #BFDB38;
+    color:white;
+}
+  
+  .gender-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  .gender-buttons label {
+    margin-right: 1rem;
+  }
+  
+  .gender-buttons button {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .gender-buttons button.active {
+    border-color: #0077cc;
+    background-color: #0077cc;
+    color: #fff;
+  }
+ 
+  .diet{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .diet-buttons label {
+    margin-right: 1rem;
+  }
+  
+  
+  .goal-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  .goal-buttons button {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    min-width: 150px;
+  }
+  
+  .goal-buttons button.active {
+    border-color: #BFDB38;
+    background-color: #BFDB38;
+    color:white;
+  }
+  #diet button.active {
+    border-color: #BFDB38 !important;
+    background-color: #BFDB38 !important;
+    color:white !important;
+  }
+ 
+  
+  .generate-meal-plan-button {
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: #0077cc;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .generate-meal-plan-button:hover {
+    background-color: blue;
+  }
+  .meal-plan-section{
+    flex:0.5;
+    height:56.375rem;
+    margin: 0;
+    padding: 1rem 0rem;
+    margin-top:10%;
+    background: transparent;
+
+    
+    
+  }
+  @media only screen and (max-width: 1200px) {
+    .diet-planner-root {
+      height: auto;
+    }
+    
+    .diet-planner {
+      flex-direction: column;
+      height: auto;
+    }
+    
+    .form-section, .meal-plan-section {
+      height: auto;
+      flex: 1;
+    }
+    
+    .form-section input {
+      width: 100%;
+    }
+    
+    .form-section .age-height input {
+      width: 100%;
+      margin-right: 0.5rem;
+    }
+    
+    .activity-level-buttons, .gender-buttons, .diet-buttons, .goal-buttons {
+      flex-direction: column;
+    }
+    
+    .activity-level-buttons button, .gender-buttons button, .diet-buttons button, .goal-buttons button {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+ 

@@ -1,0 +1,18 @@
+.card-p {
+    width: 95%;
+    height: 10%;
+    margin: 10px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.1), -20px -20px 50px rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mirror-effect-p {
+    position: relative;
+    font-weight: bolder;
+  }
+  

@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+}
+.blog-post {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: 86.5%;
+    bottom:0;
+    width:100vw;
+    margin-top: 0;
+    position:absolute;
+    background-color: white;
+  }
+  
+  .blog-post > div {
+    margin: 20px;
+  }
+  .display-panel {
+    height: 86.5%; 
+    width: 50%;
+    overflow-y: hidden; /* Hide the scrollbar on the main container */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .display-panel-inner {
+    height: 100%;
+    overflow-y: scroll; /* Add the scrollbar to the inner container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #e0e5ec;
+    background: linear-gradient(to bottom right, #e0e5ec, #f8f9fa);
+    padding: 20px;
+  }
+  .side-div{
+    height:86.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .title{
+    color:maroon;
+    font-weight: bold;
+  }
+  .not-logged{
+    color:#e0e5ec;
+    font-size: 3rem;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  
