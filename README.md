@@ -1,0 +1,12 @@
+# Grow-Fitter-Health-Fitness
+Dependencies used Dotenv natural.js nodejs mongoDB mongoose firebase 
+Tech Stack:-MERN
+The site provides a aggregated platform for MicroBlogging ,Diet Planning and Posture Detection.
+The site will be up with MicroBlogging,Diet Planning and we will Shortly update the Posture detection
+The site is made for Hackathon Conducted by GFG x AMD
+The team members are:-
+Parthib Goswami:-Full stack Development and Hosting
+Rahul Kumar:-Data Collection and Cloud Development
+Isha Keshav:-Cloud Development and Machine Learning 
+Subham Maji:-Machine Learning ,Key strategist,Front-end Development
+Any query for the app please mail on grow.fitter01@gmail.com
