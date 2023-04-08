@@ -1,0 +1,37 @@
+{
+   "steps": [
+      {
+         "name": "gcr.io/cloud-builders/docker",
+         "args": [
+            "build",
+            "-t",
+            "asia-south2-docker.pkg.dev/${PROJECT_ID}/my-docker-repo/myimage",
+            "."
+         ]
+      },
+      {
+         "name": "gcr.io/cloud-builders/docker",
+         "args": [
+            "push",
+            "asia-south2-docker.pkg.dev/${PROJECT_ID}/my-docker-repo/myimage"
+         ]
+      },
+      {
+         "name": "gcr.io/google.com/cloudsdktool/cloud-sdk",
+         "entrypoint": "gcloud",
+         "timeout": "240s",
+         "args": [
+            "compute",
+            "instances",
+            "create-with-container",
+            "instance-1",
+            "--container-image",
+            "asia-south2-docker.pkg.dev/${PROJECT_ID}/my-docker-repo/myimage"
+         ],
+         "env": [
+            "CLOUDSDK_COMPUTE_REGION=asia-south2",
+            "CLOUDSDK_COMPUTE_ZONE=asia-south2-a"
+         ]
+      }
+   ]
+}
