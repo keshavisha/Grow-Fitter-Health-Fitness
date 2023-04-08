@@ -5,7 +5,7 @@
          "args": [
             "build",
             "-t",
-            "asia-south2-docker.pkg.dev/${PROJECT_ID}/my-docker-repo/myimage",
+            "asia-south2-docker.pkg.dev/$myfitness-381706/my-docker-repo/myimage",
             "."
          ]
       },
@@ -13,7 +13,7 @@
          "name": "gcr.io/cloud-builders/docker",
          "args": [
             "push",
-            "asia-south2-docker.pkg.dev/${PROJECT_ID}/my-docker-repo/myimage"
+            "asia-south2-docker.pkg.dev/$myfitness-381706/my-docker-repo/myimage"
          ]
       },
       {
@@ -26,7 +26,7 @@
             "create-with-container",
             "instance-1",
             "--container-image",
-            "asia-south2-docker.pkg.dev/${PROJECT_ID}/my-docker-repo/myimage"
+            "asia-south2-docker.pkg.dev/$myfitness-381706/my-docker-repo/myimage"
          ],
          "env": [
             "CLOUDSDK_COMPUTE_REGION=asia-south2",
