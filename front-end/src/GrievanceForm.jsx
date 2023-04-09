@@ -13,7 +13,7 @@ const GrievanceForm=()=>{
     const handleSubmit=async e=>{
         e.preventDefault();
         const data={name,email,grievance};
-       await axios.post('http://localhost:9012/api/grievances',data).then(
+       await axios.post('http://34.131.54.222:9012/api/grievances',data).then(
         console.log('sent Sucessfully!')
        ).catch((error)=>{
         console.log(error);

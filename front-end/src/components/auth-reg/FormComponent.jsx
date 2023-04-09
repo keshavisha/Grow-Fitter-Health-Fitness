@@ -13,7 +13,7 @@ const FormComponent = () => {
 
     // send form data to backend
     const data = { title, text, user: userContext };
-    axios.post('http://localhost:9012/api/blogs', data)
+    axios.post('http://34.131.54.222:9012/api/blogs', data)
       .then(response => {
         console.log("sent!");
       })

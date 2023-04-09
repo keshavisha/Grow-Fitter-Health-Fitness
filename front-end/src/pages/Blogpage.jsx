@@ -16,7 +16,7 @@ const BlogPage = () => {
     useEffect(() => {
       const fetchLatestPosts = async () => {
         try {
-          const response = await axios.get('http://localhost:9012/api/12-latest-posts');
+          const response = await axios.get('http://34.131.54.222:9012/api/12-latest-posts');
           const latestPosts = response.data.data.slice(0, 12).map(post => {
             return { user: post.user, title: post.title, text: post.text ,id:post._id};
           });
@@ -32,7 +32,7 @@ const BlogPage = () => {
       return () => clearInterval(intervalId);
     }, []);
    useEffect(() => {
-      const uri = `http://localhost:9012/api/5-latest-user/${userContext}`;
+      const uri = `http://34.131.54.222:9012/api/5-latest-user/${userContext}`;
       const fetchUserPosts = async () => {
         try {
           const response = await axios.get(uri);

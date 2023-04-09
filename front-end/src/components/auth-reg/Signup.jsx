@@ -4,10 +4,9 @@ import './Signup.css'
 import { useState } from 'react'
 import {auth} from '../../firebase'
 import { getDatabase, ref, set } from "firebase/database";
-import { Navigate } from 'react-router-dom'
+import {BrowserRouter as Router, useNavigate } from 'react-router-dom'
 const Signup = () => {
   const [gender,setGender]=useState('not defined');
-  const [isLoading,setLoading]=useState(false)
   const[form,setForm]=useState({
     name:"",
     email:"",
@@ -18,7 +17,7 @@ const Signup = () => {
     address:"",
 
   })
-  
+  const navigate=useNavigate();
   const handleSubmit=e=>{
     e.preventDefault();
     console.log(JSON.stringify(form));
@@ -27,6 +26,7 @@ const Signup = () => {
      console.log('User created:',user);
 
      const db=getDatabase()
+     console.log(db);
      set(ref(db,`users/${user.uid}`),
      {
       name:form.name,
@@ -47,7 +47,7 @@ const Signup = () => {
       address: '',
       age: '',
      })
-     Navigate('./signin')
+    return navigate('/signin')
     }).catch((error) => {
     
       const errorCode = error.code;
@@ -102,7 +102,7 @@ const Signup = () => {
               </label>
         <label htmlFor="address">FULL ADDRESS:</label>
         <input name='address' type="text" className="address sn" placeholder='enter full address,pincode' />
-        <button className="submit" >REGISTER</button>
+        <button className="submit-sn" >REGISTER</button>
       </form>
       </div>
     </div>

@@ -68,7 +68,7 @@ const DietPlanner = () => {
         d=bmr;
     }
     const datatoSend = { targetCalories:bmr,diet:diet };
-   await axios.post('http://localhost:9012/api/diet-planner',datatoSend) .then(response => {
+   await axios.post('http://34.131.54.222:9012/api/diet-planner',datatoSend) .then(response => {
         dataf = JSON.parse(JSON.stringify(response.data));
         if(dataf&&dataf.data){
             console.log(dataf)
