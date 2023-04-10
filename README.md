@@ -11,3 +11,5 @@ Isha Keshav:-Cloud Development and Machine Learning, Key strategist
 Subham Maji:-Machine Learning,Front-end Development
 Any query for the app please mail on grow.fitter01@gmail.com
 PROBLEM WHILE SURFING THE SITE: Go to site settings -> Turn on allow Insecure Data -> Reopen the site
+Take a look at our site: https://grow-fitter.onrender.com/
+The posture detection is work in progress, once we are done with it you can upload your image while exercising and check whether you are doing it right or not!
