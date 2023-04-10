@@ -10,3 +10,4 @@ Rahul Kumar:-Data Collection and Cloud Development
 Isha Keshav:-Cloud Development and Machine Learning, Key strategist
 Subham Maji:-Machine Learning,Front-end Development
 Any query for the app please mail on grow.fitter01@gmail.com
+PROBLEM WHILE SURFING THE SITE: Go to site settings -> Turn on allow Insecure Data
